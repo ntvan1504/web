@@ -7,7 +7,7 @@ class Apps_Libs_DbConnection{
     protected $host = 'localhost';
     protected $userName = 'root';
     protected $passWord = '';
-    protected $database = 'baitapthuchanh_html';
+    protected $database = 'baitapthuchanh';
     
     protected $queryParams = []; //biến lưu trữ các params phục vụ cho query
 

@@ -7,7 +7,7 @@ class Apps_Libs_DbConnection{
     protected $host = 'localhost';
     protected $userName = 'root';
     protected $passWord = '';
-    protected $database = 'baitapthuchanh';
+    protected $database = 'baitapthuchanh_html';
     
     protected $queryParams = []; //biến lưu trữ các params phục vụ cho query
 
@@ -18,6 +18,7 @@ class Apps_Libs_DbConnection{
     public function __construct() {
         $this->connect();
     }
+    //HELLO EVERYBODY
     
     public function connect() {
         if(self::$connectionInstance===null){

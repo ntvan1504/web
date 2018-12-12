@@ -4,7 +4,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-include "Apps/bootstrap.php";
+include "./Apps/bootstrap.php";
 
 //$a= new Apps_Libs_DbConnection();
 
@@ -21,8 +21,8 @@ include "Apps/bootstrap.php";
 
 
 
-$path = __DIR__."\public";
-echo $path;
+$path = __DIR__."/public";
+
 $router = new Apps_Libs_Router($path); //khởi tạo hàm có biến là đường dẫn đến vị trí file này (cùng vị trí folder với file home và post)
 $router->router();
 

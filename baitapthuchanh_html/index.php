@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 include ".\Apps\bootstrap.php";
-
+echo "hello";
 //$a= new Apps_Libs_DbConnection();
 
 

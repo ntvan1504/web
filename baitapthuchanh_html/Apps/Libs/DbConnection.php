@@ -23,7 +23,7 @@ class Apps_Libs_DbConnection{
     public function connect() {
         if(self::$connectionInstance===null){
             try{ //try&catch để xử lý ngoại lệ
-                self::$connectionInstance= new PDO('mysql:host='.$this-> host . ';dbname='.$this->database,$this->userName, $this->passWord);
+                self::$connectionInstance= new PDO('mysql:host='.$this->host . ';dbname='.$this->database,$this->userName, $this->passWord);
                 self::$connectionInstance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (Exception $ex) { //xử lý lỗi ngoại lệ exception
                 echo "ERROR".$ex->getMessage;

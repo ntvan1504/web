@@ -25,5 +25,3 @@ $path = __DIR__."/public";
 
 $router = new Apps_Libs_Router($path); //khởi tạo hàm có biến là đường dẫn đến vị trí file này (cùng vị trí folder với file home và post)
 $router->router();
-
-echo "aaaa";
